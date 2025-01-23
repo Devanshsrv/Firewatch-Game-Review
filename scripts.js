@@ -14,10 +14,22 @@ const sectionsData = {
         { img: "Images/Gameplay/Cache_boxes.png", description: "Henry’s pacing is deliberate and introspective, as the game encourages slow, thoughtful exploration. There’s no rush or urgency to complete objectives, making it a meditative experience. As you move through the game, you’re encouraged to reflect on Henry’s emotional state. The game’s pacing, with long stretches of silence and contemplation, allows you to connect deeply with the character and his journey, emphasizing the themes of loneliness, introspection, and emotional healing." }
     ],
     Sound: [
-        { video: "https://youtu.be/PqKj-TOx3qo?si=CnFA-UnayBdiwFMs", description: "Music of firewatch is composed by Chris Remo, features a blend of acoustic and atmospheric tracks that enhance the game’s mood. There are 19 tracks, each tailored to specific moments." },
-        { video: "https://youtu.be/KzWGSBWEb3o?si=neKQq2Y3tkdLcyTJ", description: "This is one of my favourite soundtracks from the game as it shifts the perspective of the player from a relaxed mode to foreboding" },
-        { video: "https://youtu.be/CxwQgPeRgp0?si=q_s850dm9cX-rEPa", description: "“Canyon Sunset”: Accompanies the breathtaking visuals of the forest." },
-        { video: "https://youtu.be/v7wtrkp5Mx4?si=omelHxqM2IpzgZ5R", description: "“Prologue”: Sets a melancholic tone, reflecting Henry’s backstory." },
+        { 
+            video: "https://www.youtube.com/embed/PqKj-TOx3qo", 
+            description: "Music of firewatch is composed by Chris Remo, features a blend of acoustic and atmospheric tracks that enhance the game’s mood. There are 19 tracks, each tailored to specific moments." 
+        },
+        { 
+            video: "https://www.youtube.com/embed/KzWGSBWEb3o", 
+            description: "This is one of my favourite soundtracks from the game as it shifts the perspective of the player from a relaxed mode to foreboding" 
+        },
+        { 
+            video: "https://www.youtube.com/embed/CxwQgPeRgp0", 
+            description: "“Canyon Sunset”: Accompanies the breathtaking visuals of the forest." 
+        },
+        { 
+            video: "https://www.youtube.com/embed/v7wtrkp5Mx4", 
+            description: "“Prologue”: Sets a melancholic tone, reflecting Henry’s backstory." 
+        },
     ],
     Technical: [
         { img: "Images/Technical/Unity.avif", description: "Firewatch is built on Unity, a flexible game engine. It allows for high-quality visuals with hand-painted textures and detailed lighting effects. Unity’s cross-platform compatibility enables the game’s release on multiple devices. The game is renowned for its artistic style, heavily influenced by Olly Moss’s iconic visual aesthetic." },
