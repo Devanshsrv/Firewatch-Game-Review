@@ -1,0 +1,274 @@
+title,
+body h2 {
+    font-family: "Luckiest Guy", serif;
+}
+
+html,
+body {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+    background-color: #000030;
+    scroll-behavior: smooth;
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('Images/959309.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 100px;
+    /* max-width: 900px;*/
+    background: #fff;
+    border-radius: 23px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.overview-section {
+    height: calc(100vh - 230px);
+    /* 100% of viewport minus header height */
+    padding: 20px;
+    margin-bottom: 40px;
+    /* Space at the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+    /* Ensure text is readable on the background */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    /* Enhance text visibility */
+    background: url(Images/Overview.jpg) no-repeat center center/cover;
+    border-radius: 23px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section h2 {
+    color: wheat;
+    text-decoration: underline wheat;
+    margin-bottom: 40px;
+}
+
+.map-section {
+    display: flex;
+    /*width: auto; /* Ensure it spans the full width of the parent */
+    /*height: 540px;*/
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 95vh;
+    background-color: #D3BD96;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    text-decoration: underline #000030;
+}
+
+.text-content {
+    flex: 1;
+    padding: 30px;
+    /*Adjust the gap as needed*/
+}
+
+.map-container {
+    flex: 0 0 auto;
+    width: 100%;
+    /* Full width of the parent */
+    max-width: 600px;
+    /* Limit the maximum width */
+    aspect-ratio: 4 / 3;
+    /* Maintain a 4:3 aspect ratio */
+    position: relative;
+    overflow: hidden;
+    /* Ensure content respects the border radius */
+    border-radius: 23px;
+    background-color: #D3BD96;
+    /* Fallback color for the container */
+}
+
+.map-container img {
+    width: 100%;
+    /* Fit within the container */
+    height: 100%;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure the image fills the container while respecting the aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 23px;
+    /* Match the container's border radius */
+}
+
+/*Hotspots*/
+.hotspot {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #BF3604;
+    /* Color for the symbol and label */
+    font-size: 9px;
+    animation: pulse 2s infinite;
+}
+
+.hotspot-symbol {
+    font-size: 10px;
+    /* Larger size for the symbol */
+    font-weight: bold;
+}
+
+hotspot-label {
+    font-size: 14px;
+    /* Smaller size for the label */
+    margin-top: 5px;
+    /* Space between symbol and label */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+hotspot:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    transition: transform 0.2s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.image-container iframe {
+    width: 100%;
+    height: 290px; /* Adjust height as needed */
+    border: none;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.character-section img,
+.sound-section img,
+.insights-section img,
+.improvement-section img,
+.market-section img,
+.design-section img,
+.technical-section img,
+.gameplay-section img,
+.storyline-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-section,
+.sound-section,
+.insights-section,
+.improvement-section,
+.market-section,
+.design-section,
+.technical-section,
+.gameplay-section,
+.storyline-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.character-section div,
+.sound-section div,
+.insights-section div,
+.improvement-section div,
+.market-section div,
+.design-section div,
+.technical-section div,
+.gameplay-section div,
+.storyline-section div {
+    flex: 1;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+
+
+/*Details Section*/
+/* Add smooth transitions for better user experience */
+.gameplay-section img,
+.gameplay-section p {
+    transition: opacity 0.5s ease;
+}
+
+/* Style for navigation buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style for navigation buttons container */
+.gameplay-section .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    /* Space between the arrows */
+}
